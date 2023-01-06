@@ -8,6 +8,16 @@
   background: #131418;
   color: rgb(255, 255, 255);
 }
+h2 {
+  font-family: cursive;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*text-shadow: 2px 2px 2px #ff0000;*/
+  position: relative;
+  top: -30px;
+  animation: animate 1.5s linear infinite;
+}
 span.show {
   margin: 20px 0;
 }
@@ -27,4 +37,9 @@ button {
   border-radius: 10px;
   background-color: #008cba;
   cursor: pointer;
+}
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
