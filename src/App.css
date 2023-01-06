@@ -13,9 +13,8 @@ h2 {
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*text-shadow: 2px 2px 2px #ff0000;*/
-  position: relative;
-  top: -30px;
+  margin: 0;
+  margin: 10px;
   animation: animate 1.5s linear infinite;
 }
 span.show {
@@ -27,6 +26,7 @@ span.hide {
 
 table td {
   cursor: pointer;
+  margin: auto;
   height: 100px;
   width: 100px;
   box-shadow: 1px 1px 5px 2px rgba(255, 255, 255, 0.4);

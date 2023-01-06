@@ -10,7 +10,7 @@ function App() {
   const handleClick = (id) => {
     // alert(id);
     if (cell[id] !== "") {
-      alert("clicked Already");
+      // alert("clicked Already");
       return;
     }
     let sq = [...cell];
@@ -66,7 +66,11 @@ function App() {
   };
 
   const Cell = ({ id }) => {
-    return <td onClick={() => handleClick(id)}>{cell[id]}</td>;
+    return (
+      <td onClick={() => handleClick(id)}>
+        <h2>{cell[id]}</h2>
+      </td>
+    );
   };
   return (
     <div className="App">
