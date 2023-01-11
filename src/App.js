@@ -9,7 +9,7 @@ function App() {
   const [winner, setWinner] = useState();
   const handleClick = (id) => {
     // alert(id);
-    if (cell[id] !== "") {
+    if (cell[id] !== "" || winner) {
       // alert("clicked Already");
       return;
     }
